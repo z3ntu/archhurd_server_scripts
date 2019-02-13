@@ -1,0 +1,11 @@
+[Unit]
+Description=archweb pgp_import
+
+[Service]
+Type=oneshot
+User=archweb
+WorkingDirectory=/srv/http/archweb/
+ExecStart=bash /usr/local/bin/import_archhurd_gpg.sh
+
+[Install]
+WantedBy=multi-user.target
