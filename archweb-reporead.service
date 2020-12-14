@@ -5,7 +5,7 @@ After=network.target
 [Service]
 User=archweb
 WorkingDirectory=/srv/http/archweb/
-ExecStart=/srv/http/archweb/env/bin/python manage.py reporead_inotify
+ExecStart=/srv/http/archweb/env3.9/bin/python manage.py reporead_inotify
 Restart=on-failure
 Nice=5
 
